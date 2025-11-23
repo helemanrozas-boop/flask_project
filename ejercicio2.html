@@ -1,0 +1,11 @@
+<!DOCTYPE html><html><body>
+<h2>Inicio de sesión</h2>
+<form method="post">
+<input name="nombre" placeholder="Ingresa tu nombre"><br>
+<input type="password" name="clave" placeholder="Ingresa tu contraseña"><br>
+<button>Verificar</button>
+</form>
+{% if mensaje %}
+<p>{{mensaje}}</p>
+{% endif %}
+</body></html>

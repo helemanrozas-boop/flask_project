@@ -1,0 +1,15 @@
+<!DOCTYPE html><html><body>
+<h2>Calculo de compras</h2>
+<form method="post">
+<input name="nombre" placeholder="Ingresa tu nombre"><br>
+<input name="edad" placeholder="Ingresa tu edad"><br>
+<input name="cantidad" placeholder="Cantidad de tarros"><br>
+<button>Calcular</button>
+</form>
+{% if resultado %}
+<p>Nombre: {{resultado.nombre}}</p>
+<p>Total sin descuento: ${{resultado.total}}</p>
+<p>Descuento: ${{resultado.descuento}}</p>
+<p>Total a pagar: ${{resultado.total_pagar}}</p>
+{% endif %}
+</body></html>
